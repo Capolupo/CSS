@@ -1,0 +1,21 @@
+.container{
+  border: dashed;
+}
+.containerFlex{
+  border: dashed;
+  display: flex;
+  flex-direction:row-reverse
+}
+
+.containerjustify-content{
+  border: dashed;
+  display: flex;
+  /*flex-direction:row-reverse*/
+  justify-content: space-between;
+}
+
+.item{
+  --hue:0;
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%)/*hsl(hue, saturation, lightness);*/
+}

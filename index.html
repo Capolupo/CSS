@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Estudos CSS </title>  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>container inicial</h2> 
+  <span>
+    <div>
+      .container{
+        border: dashed;
+      }
+    </div>
+    <div>
+      .item{
+        --hue:0;
+        text-align: center;
+        background-color: hsl(var(--hue), 100%, 70%)   ->    /*hsl(hue, saturation, lightness);*/
+      }
+    </div> 
+    <p> Normal flow a div ocupa toda a largura</p> 
+  </span>
+  <div class="container">
+    <div class="item" style="--hue:0">1</div>
+    <div class="item" style="--hue:100">2</div>
+    <div class="item" style="--hue:200">3</div>
+    <div class="item" style="--hue:300">4</div>
+  </div>
+  <br>
+  <h2>Direction</h2>
+  <div class="containerFlex">
+    <div class="item" style="--hue:0">1</div>
+    <div class="item" style="--hue:100">2</div>
+    <div class="item" style="--hue:200">3</div>
+    <div class="item" style="--hue:300">4</div>
+  </div>
+  <p> Quando aplico o Flex (Display:flex) div fica uma ao lado da outra, agora posso começar a utilizar outras propriedades como <b> flex-direction:row ; row-reverse ; column ; column-reverse</b> etc </p> 
+  
+  <h2>Alingment & Spaces</h2>
+  <div class="containerjustify-content">
+    <div class="item" style="--hue:0">1</div>
+    <div class="item" style="--hue:100">2</div>
+    <div class="item" style="--hue:200">3</div>
+    <div class="item" style="--hue:300">4</div>
+  </div>
+  <p> Quando aplico o Flex (Display:flex) div fica uma ao lado da outra, agora posso começar a utilizar outras propriedades como <b> justify-content:flex-start ; flex-end ; center ; space-evenly ; space-around ; space-between</b> etc </p> 
+
+</body>
+</html>
